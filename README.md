@@ -1,6 +1,6 @@
 # Nails By Emma Smith
 
-Live site: https://martyr1617.github.io/nailsbyemmasmith/
+Live site: https://nailsbyemmasmith.com/
 
 ## How to edit (free)
 1. Open `index.html` on github.com and click the pencil icon (Edit).
