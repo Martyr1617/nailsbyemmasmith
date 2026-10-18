@@ -95,6 +95,16 @@ h2 em{color:var(--sage-deep)}
 .price b{font-family:var(--serif);font-weight:500;font-size:2.4rem}
 .price span{color:var(--muted);font-size:.9rem}
 
+/* GALLERY */
+#gallery{padding-top:0}
+.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:26px}
+.g-card{flex:0 0 calc((100% - 52px)/3);margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 12px 0;transition:transform .35s,box-shadow .35s}
+.g-card:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(95,70,55,.35)}
+.g-card .g-img{border-radius:calc(var(--r) - 8px);overflow:hidden;aspect-ratio:3/4;background:var(--blush)}
+.g-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.g-card:hover img{transform:scale(1.03)}
+.g-card figcaption{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--ink);text-align:center;padding:16px 8px 18px;line-height:1.2}
+
 /* DETAILS */
 .details{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:26px}
 .detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:36px 32px;transition:transform .35s,box-shadow .35s}
@@ -164,6 +174,7 @@ footer{padding:40px 0 50px}
   .feature-img{min-height:360px}
   .feature-body{padding:40px 28px}
   .details{grid-template-columns:1fr}
+  .g-card{flex-basis:calc((100% - 26px)/2)}
   .steps{grid-template-columns:1fr 1fr}
   section{padding:84px 0}
   .process,.contact{padding:76px 0;border-radius:28px}
@@ -173,6 +184,8 @@ footer{padding:40px 0 50px}
   .brand svg{width:40px;height:40px}
   .nav .btn{display:none}
   .steps,.row{grid-template-columns:1fr}
+  .gallery-grid{gap:18px}
+  .g-card{flex-basis:100%}
   .hero-stats{gap:26px}
   .hero-stats b{font-size:1.7rem}
 }
@@ -198,6 +211,7 @@ footer{padding:40px 0 50px}
     </a>
     <nav><ul>
       <li><a href="#work">Work</a></li>
+      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#details">Details</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -280,6 +294,69 @@ footer{padding:40px 0 50px}
         <h4>Reusable</h4>
         <p>Durable gel finish and a protective case let you wear your set again and again.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="eyebrow">Gallery</div><h2>More <em>hand-painted</em> sets</h2></div>
+      <p>A few more favorites from Emma's desk &mdash; every design is painted by hand and can be made to order in your size.</p>
+    </div>
+    <div class="gallery-grid">
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/autumn-fox.jpg" srcset="assets/gallery/autumn-fox-480.jpg 600w, assets/gallery/autumn-fox.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Hand showing almond nails with a 3D fox, orange plaid tips, and small autumn accents in brown, green, and blue." loading="lazy" decoding="async"></div>
+        <figcaption>Autumn Fox</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/blossom-sundae.jpg" srcset="assets/gallery/blossom-sundae-480.jpg 600w, assets/gallery/blossom-sundae.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Soft pink nails with 3D flowers, ice-cream-cone accents, and tiny gold studs." loading="lazy" decoding="async"></div>
+        <figcaption>Blossom Sundae</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/midnight-bloom.jpg" srcset="assets/gallery/midnight-bloom-480.jpg 600w, assets/gallery/midnight-bloom.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Navy French tips with a 3D blue-and-white flower accent nail and a single rhinestone." loading="lazy" decoding="async"></div>
+        <figcaption>Midnight Bloom</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/sunny-daisy.jpg" srcset="assets/gallery/sunny-daisy-480.jpg 600w, assets/gallery/sunny-daisy.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Set of yellow press-on nails in a clear case, with hand-painted white daisies and a Woodstock accent nail." loading="lazy" decoding="async"></div>
+        <figcaption>Sunny Daisy</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/ladybug-noir.jpg" srcset="assets/gallery/ladybug-noir-480.jpg 600w, assets/gallery/ladybug-noir.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Short oval nails in red and black with hand-dotted ladybug spots and black French tips." loading="lazy" decoding="async"></div>
+        <figcaption>Ladybug Noir</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/frosted-glitter.jpg" srcset="assets/gallery/frosted-glitter-480.jpg 600w, assets/gallery/frosted-glitter.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Two hands showing sheer nails with a silver glitter fade and tiny rhinestones." loading="lazy" decoding="async"></div>
+        <figcaption>Frosted Glitter</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/orchard-ladybug.jpg" srcset="assets/gallery/orchard-ladybug-480.jpg 600w, assets/gallery/orchard-ladybug.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Playful set with a ladybug, an apple with a worm, red polka dots, and a gingham accent nail." loading="lazy" decoding="async"></div>
+        <figcaption>Orchard Ladybug</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/whisker-cat.jpg" srcset="assets/gallery/whisker-cat-480.jpg 600w, assets/gallery/whisker-cat.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Black polka-dot French tips with a 3D black-and-white cat perched on one nail." loading="lazy" decoding="async"></div>
+        <figcaption>Midnight Whiskers</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/cocoa-blossom.jpg" srcset="assets/gallery/cocoa-blossom-480.jpg 600w, assets/gallery/cocoa-blossom.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Pink and chocolate-brown nails with polka dots, a 3D pink flower, and gold studs." loading="lazy" decoding="async"></div>
+        <figcaption>Cocoa Blossom</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/holiday-sticks.jpg" srcset="assets/gallery/holiday-sticks-480.jpg 600w, assets/gallery/holiday-sticks.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Five press-on nails on display sticks: deep red, coral pink, a holiday wreath, and a candy-cane stripe." loading="lazy" decoding="async"></div>
+        <figcaption>Holiday Sweets</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/numbers-rainbow.jpg" srcset="assets/gallery/numbers-rainbow-480.jpg 600w, assets/gallery/numbers-rainbow.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Short nails with painted numbers, a rainbow stripe, and red-and-black ombre accents." loading="lazy" decoding="async"></div>
+        <figcaption>Numbers &amp; Rainbow</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/spider-web.jpg" srcset="assets/gallery/spider-web-480.jpg 600w, assets/gallery/spider-web.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Red and black spider-web nails with a Spider-Man mask accent and a little black spider." loading="lazy" decoding="async"></div>
+        <figcaption>Web Slinger</figcaption>
+      </figure>
+      <figure class="g-card reveal">
+        <div class="g-img"><img src="assets/gallery/orchard-sticks.jpg" srcset="assets/gallery/orchard-sticks-480.jpg 600w, assets/gallery/orchard-sticks.jpg 1200w" sizes="(max-width:560px) 92vw, (max-width:900px) 46vw, 372px" alt="Press-on nails on display sticks: an apple with a worm, a ladybug, gingham, and red polka dots." loading="lazy" decoding="async"></div>
+        <figcaption>Orchard Sticks</figcaption>
+      </figure>
     </div>
   </div>
 </section>
