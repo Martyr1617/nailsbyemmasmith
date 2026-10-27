@@ -155,6 +155,12 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sage)}
 .upload-err:empty{display:none}
 .form-note{font-size:.85rem;color:#a8988f}
 .form-note a{color:var(--blush)}
+.pay-venmo{margin-top:36px;max-width:24em;padding:22px 24px 24px;border:1px solid var(--line);border-radius:var(--r);background:rgba(255,255,255,.04)}
+.pay-venmo .eyebrow{color:var(--sage)}
+.pay-venmo p{font-family:var(--serif);font-style:italic;font-size:1.7rem;line-height:1.15;color:var(--blush);margin:8px 0 20px;max-width:none}
+.contact .pay-venmo .btn{text-transform:none;letter-spacing:.02em;font-size:.95rem}
+.contact .pay-venmo .btn:hover{background:var(--blush-deep)}
+.contact .pay-venmo .btn:focus-visible{outline:2px solid var(--blush);outline-offset:3px}
 
 footer{padding:40px 0 50px}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:.86rem}
@@ -394,6 +400,11 @@ footer{padding:40px 0 50px}
       <div class="eyebrow" style="color:var(--sage)">Custom orders</div>
       <h2>Let's create <em>your</em> set.</h2>
       <p>Tell me your favorite colors, shape, and length, and I'll design a set made just for you.</p>
+      <div class="pay-venmo">
+        <div class="eyebrow">Payment</div>
+        <p>Pay securely through Venmo</p>
+        <a class="btn" href="https://venmo.com/u/kimsmith04" target="_blank" rel="noopener">@kimsmith04</a>
+      </div>
     </div>
     <form class="reveal" id="orderForm" action="https://formsubmit.co/emasmith1617@gmail.com" method="POST" enctype="multipart/form-data">
       <input type="hidden" name="_subject" value="New nail set request — Nails By Emma Smith">
