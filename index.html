@@ -161,6 +161,22 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sage)}
 .photo-steps strong{display:flex;align-items:center;gap:10px;font-weight:500;font-size:.95rem;color:#f6ece7;margin-bottom:8px}
 .photo-steps ol{margin:0;padding-left:20px;display:grid;gap:4px}
 .photo-steps a{color:var(--blush)}
+
+.measure-guide{border:1px dashed rgba(243,220,217,.45);border-radius:14px;padding:16px 18px;color:#d9ccc6;font-size:.9rem}
+.measure-guide h3{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:.95rem;color:#f6ece7;margin:0 0 2px;line-height:1.3}
+.contact .measure-guide p{margin-top:0;max-width:none}
+.measure-guide .measure-sub{font-family:var(--serif);font-style:italic;color:var(--blush);font-size:1.08rem;line-height:1.3;margin-bottom:8px}
+.measure-guide .measure-figs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 12px}
+.measure-guide .measure-figs figure{margin:0}
+.measure-guide .measure-figs img{width:100%;height:auto;border-radius:14px;display:block}
+.measure-guide .measure-figs figcaption{margin-top:6px;font-size:.78rem;color:#c9bab2;text-align:center;line-height:1.3}
+@media (max-width:360px){
+  .measure-guide .measure-figs{grid-template-columns:1fr}
+}
+.measure-guide ol{margin:0;padding-left:20px;display:grid;gap:4px}
+.measure-guide a{color:var(--blush)}
+.contact .measure-guide .measure-tips{margin-top:10px;padding-top:10px;border-top:1px solid rgba(243,220,217,.28);font-size:.85rem;color:#c9bab2}
+.contact .measure-guide .measure-mail{margin-top:8px;color:#d9ccc6;font-size:.9rem}
 .form-err{color:#f2b8b0;font-size:.9rem;display:none}
 .form-note{font-size:.85rem;color:#a8988f}
 .form-note a{color:var(--blush)}
@@ -452,6 +468,28 @@ footer{padding:40px 0 50px}
           <li>Then email your photos to <a href="mailto:emasmith1617@gmail.com?subject=Inspiration%20photos%20for%20my%20nail%20request">emasmith1617@gmail.com</a>.</li>
           <li>Use the same name you entered above so Emma can match them to your request.</li>
         </ol>
+      </div>
+      <div class="reveal measure-guide">
+        <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.75"/></svg>How to Measure</h3>
+        <p class="measure-sub">The coin method, the easiest way</p>
+        <div class="measure-figs">
+          <figure>
+            <img src="assets/measure/measure-fingers.jpg" srcset="assets/measure/measure-fingers-480.jpg 480w, assets/measure/measure-fingers.jpg 800w" sizes="(max-width:360px) 92vw, (max-width:560px) 44vw, 220px" width="800" height="600" alt="Top-down photo of four fingers placed flat on a cream surface next to a US quarter, showing how to photograph your hand for a press-on nail size." loading="lazy" decoding="async">
+            <figcaption>Four fingers + coin</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/measure/measure-thumb.jpg" srcset="assets/measure/measure-thumb-480.jpg 480w, assets/measure/measure-thumb.jpg 800w" sizes="(max-width:360px) 92vw, (max-width:560px) 44vw, 220px" width="800" height="600" alt="Top-down photo of a thumb next to a US quarter on a cream surface, showing how to photograph your thumb separately for a press-on nail size." loading="lazy" decoding="async">
+            <figcaption>Thumb + coin</figcaption>
+          </figure>
+        </div>
+        <ol>
+          <li>Place your hand flat on a table.</li>
+          <li>Take a photo directly above your four fingers, with a US quarter or a ruler next to them.</li>
+          <li>Put your thumb at the edge of the table and take a separate photo of it next to the same coin.</li>
+          <li>Repeat for your other hand.</li>
+        </ol>
+        <p class="measure-tips">Keep the camera and your fingers flat, not tilted. Measure natural nails only, with no extensions or enhancements. You should end up with four photos: both hands and both thumbs.</p>
+        <p class="measure-mail">Email the four photos, along with any inspiration photos, to <a href="mailto:emasmith1617@gmail.com?subject=Inspiration%20photos%20for%20my%20nail%20request">emasmith1617@gmail.com</a>. Use the same name you entered above so Emma can match them to your request.</p>
       </div>
       <button class="btn" type="submit">Send Request</button>
       <p class="sent" role="status">Thank you! Your request was sent — Emma will reply by email soon. Don't forget to email your inspiration photos to <a href="mailto:emasmith1617@gmail.com?subject=Inspiration%20photos%20for%20my%20nail%20request" style="color:var(--blush)">emasmith1617@gmail.com</a>.</p>
